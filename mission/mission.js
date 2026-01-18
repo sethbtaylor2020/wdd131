@@ -10,13 +10,13 @@ function changeTheme() {
         document.body.style.backgroundColor = '#ffffff';
         document.body.style.color = '#000000';
         const image = document.querySelector('img');
-        image.setAttribute('src', '/mission/byui-logo-blue.webp');
+        image.setAttribute('src', 'byui-logo-blue.webp');
     }
     else if (current === 'dark') {
         document.body.style.backgroundColor = '#434343';
         document.body.style.color = '#ffffff';
         const image = document.querySelector('img');
-        image.setAttribute('src', '/mission/logodark.png');
+        image.setAttribute('src', 'logodark.png');
     } 
     
 }
