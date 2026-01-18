@@ -17,6 +17,5 @@ function changeTheme() {
         document.body.style.color = '#ffffff';
         const image = document.querySelector('img');
         image.setAttribute('src', 'logodark.png');
-    } 
-    
+    }  
 }
