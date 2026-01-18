@@ -13,7 +13,7 @@ function changeTheme() {
         image.setAttribute('src', 'byui-logo-blue.webp');
     }
     else if (current === 'dark') {
-        document.body.style.backgroundColor = '#434343';
+        document.body.style.backgroundColor = '#333';
         document.body.style.color = '#ffffff';
         const image = document.querySelector('img');
         image.setAttribute('src', 'logodark.png');
