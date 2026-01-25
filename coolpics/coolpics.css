@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: white
+}
+
+header,
+footer {
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: rgb(0, 159, 212);
+}
+
+h1 {
+  text-align: center;
+}
+
+nav a {
+  padding: 20px;
+  color: white;
+  display: none;
+    text-align: center;
+ 
+
+}
+
+.menu{
+    text-align: center;
+    font-style: italic;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #616061;
+  
+}
+
+.menu-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+footer {
+  text-align: center;
+}
+
+/* Current Work layout */
+.currentwork {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: lightgrey;
+}
+.currentworktitle {
+    padding: 15px;
+    display: grid;
+   text-align: center;
+  font-size: 30px;
+  color: black;
+  background-color: lightgrey;
+}
+.currentwork img {
+  width: 75%;
+  height: 250px;
+  margin: 1em;
+  border: 5px solid #ffffff;
+  box-shadow: black 5px 5px 15px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+  .currentwork {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .currentwork {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  nav a {
+    display: inline;
+  }
+
+  nav {
+    text-align: center;
+  }
+  .menu{
+    display: none;
+  }
+}
