@@ -45,3 +45,7 @@ li{
     margin: 10px;
     font-size: 25px;
 }
+body.dark {
+  background: #000;
+  color: #fff;
+}
