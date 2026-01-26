@@ -7,14 +7,12 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current === 'light') {
-        document.body.style.backgroundColor = '#ffffff';
-        document.body.style.color = '#000000';
+        document.body.classList.add('dark');
         const image = document.querySelector('img');
         image.setAttribute('src', 'byui-logo-blue.webp');
     }
     else if (current === 'dark') {
-        document.body.style.backgroundColor = '#333';
-        document.body.style.color = '#ffffff';
+       document.body.classList.remove('dark');
         const image = document.querySelector('img');
         image.setAttribute('src', 'logodark.png');
     }  

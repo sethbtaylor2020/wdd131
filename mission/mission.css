@@ -39,4 +39,9 @@ p{
 #indent{
 padding-left: 5%;
 max-width: 75%;
+font-size: 25px;
+}
+li{
+    margin: 10px;
+    font-size: 25px;
 }
