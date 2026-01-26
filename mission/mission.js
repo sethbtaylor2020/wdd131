@@ -4,16 +4,15 @@ let pageContent = document.querySelector('body');
 
 selectElem.addEventListener('change', changeTheme);
 
+
 function changeTheme() {
-    let current = selectElem.value;
-    if (current === 'light') {
-        document.body.classList.add('dark');
-        const image = document.querySelector('img');
-        image.setAttribute('src', 'byui-logo-blue.webp');
-    }
-    else if (current === 'dark') {
-       document.body.classList.remove('dark');
-        const image = document.querySelector('img');
-        image.setAttribute('src', 'logodark.png');
-    }  
+  const current = selectElem.value;
+
+  if (current === 'dark') {
+    document.body.classList.add('dark');
+    logo.src = 'logodark.png';
+  } else if (current === 'light') {
+    document.body.classList.remove('dark');
+    logo.src = 'byui-logo-blue.webp';
+  }
 }
