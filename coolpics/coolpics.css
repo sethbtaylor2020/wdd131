@@ -13,6 +13,11 @@ footer {
   padding: 1rem;
   background-color: rgb(0, 159, 212);
 }
+nav { display: none; }
+
+nav.show { display: block; }
+
+nav.show a { display: block; }
 
 h1 {
   text-align: center;
@@ -84,14 +89,36 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  nav {
+    text-align: center;
+    display: block;
+  }
+
   nav a {
     display: inline;
   }
 
-  nav {
-    text-align: center;
-  }
-  .menu{
+  .menu {
     display: none;
   }
+}
+
+
+.fullsize {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.close-btn {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  background-color: gray;
+  padding: 10px;
+  top: 500px;
+  right: 30px;
 }
