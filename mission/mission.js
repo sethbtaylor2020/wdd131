@@ -16,3 +16,4 @@ function changeTheme() {
     logo.src = 'byui-logo-blue.webp';
   }
 }
+
