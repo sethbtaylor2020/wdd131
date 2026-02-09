@@ -1,13 +1,13 @@
 .mainscreen{
     display : grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    padding-left: 100px;
-    padding-right: 100px;
+    grid-template-columns: 2fr 1fr 3fr;
+   
 }
 nav {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
+  padding-right: 10px;
 }
 
 h1{
@@ -22,3 +22,19 @@ nav a {
   text-decoration: none;
   color: brown;
 }
+.position {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+h2{
+    color: brown;
+}
+
+@media (max-width: 599px) {
+  .mainscreen {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
