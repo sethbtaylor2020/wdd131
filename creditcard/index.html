@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="credit.js" defer></script>
+  </head>
+  <body>
+        <main>
+            <div class="back-card">
+                <hr class="magstripe"/>
+            </div>
+            <section class="container">
+               <form id="checkoutForm" action="completed.html" method="get">
+
+                <div class="toprow">
+                    <p class="total">Total: $199</p>
+                    <p class="icon">💳</p>
+                </div>
+
+                <div class="field full">
+                    <label for="cardnumber">CARD NUMBER</label>
+                    <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9101 1020" required>
+                </div>
+
+                <div class="bottomrow">
+                    <div class="field holder">
+                    <label for="name">CARD HOLDER</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="field exp">
+                    <label>EXPIRATION</label>
+                    <div class="exp-row">
+                        <input type="text" id="month" name="expMonth" placeholder="MM" maxlength="2" required>
+                        <input type="text" id="year" name="expYear" placeholder="YY" maxlength="2" required>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="cvc">
+                    <label for="cvc">CVC/CVV</label>
+                    <input id="cvc" name="cvc" placeholder="xxx" maxlength="3" required>
+                </div>
+
+  <button class="submit" type="submit">Submit</button>
+</form>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
