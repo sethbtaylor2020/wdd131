@@ -36,7 +36,7 @@ footer {
     flex: 1;
 }
 .search {
-    background-image: url('/recipes/images/search.svg');
+    background-image: url('images/search.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
