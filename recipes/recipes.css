@@ -35,7 +35,7 @@ footer {
 .searchbar input {
     flex: 1;
 }
-.search {
+.searchButton {
     background-image: url('images/search.svg');
     background-repeat: no-repeat;
     background-position: center;

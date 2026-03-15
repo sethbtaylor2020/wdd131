@@ -5,7 +5,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
             <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
-            <link rel="stylesheet" href="recipes.css">                 
+            <link rel="stylesheet" href="recipes.css"> 
+            <script defer src="recipes.js"></script>                
             
             <!-- Open Graph (Facebook, LinkedIn, etc.) -->
             <meta property="og:type" content="website">
@@ -36,30 +37,11 @@
 </div>
 
 <div class="searchbar">
-    <input type="text" placeholder="Search for a recipe...">
-    <button class="search" type="submit"></button>
+    <input id="searchInput" type="text" placeholder="Search for a recipe...">
+    <button id="searchButton" class="searchButton" type="button"></button>
 </div>
 
-<div class="food-container">
-    <img class="food" src="images/apple-crisp.jpg" alt="apple crisp">
-
-    <button class="dessert" type="button">Dessert</button>
-
-    <p class="title">Apple Crisp</p>
-
-    <span
-      class="rating"
-      role="img"
-      aria-label="Rating: 4 out of 5 stars">
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star-empty">☆</span>
-    </span>
-
-    <p class="description">A delicious and easy-to-make apple crisp recipe.</p>
-</div>
+<div id ="recipeContainer"></div>
 <footer>
 
     <div class="social">
